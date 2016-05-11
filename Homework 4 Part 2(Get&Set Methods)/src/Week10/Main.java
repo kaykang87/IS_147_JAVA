@@ -1,16 +1,9 @@
 package Week10;
 
-public class Main
+public class Main extends TestOverloading
 {
-    public static void main(String args[])
+    public Main()
     {
-        //This object creation would call the default constructor
-        //StudentData()
-       /*This object creation would call the parameterized
-        * constructor StudentData(int, String, int)*/
-        StudentData calling = new StudentData();
-        calling.StudentData(studentID, studentIDNUM);
-        calling.StudentData(studentName);
-        calling.StudentData(studentAge);
+        super();
     }
 }
