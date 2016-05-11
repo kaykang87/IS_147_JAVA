@@ -1,3 +1,7 @@
+/*Kyong Kang
+  kyongk1@umbc.edu
+ */
+
 package Week10;
 
 public class Main{
