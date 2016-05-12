@@ -31,21 +31,24 @@ public class StudentData
     {
         this.studentID = idnum;
     }
-    public int getID(){
+    public int getID()
+    {
         return studentID;
     }
     public void setName(String name)
     {
         this.studentName = name;
     }
-    public String getName(){
+    public String getName()
+    {
         return studentName;
     }
     public void setAge(int num)
     {
         this.studentAge = num;
     }
-    public int getAge(){
+    public int getAge()
+    {
         return studentAge;
     }
 }
