@@ -1,21 +1,21 @@
 /* Kyong Kang
    kyongk1@umbc.edu
  */
-
 package com.company;
 
 public class InterfaceInheritance
 {
-      public static void main(String[] args) {
+      public static void main(String[] args)
+      {
           Car c= new BMW();
           c.start ();
           c.stop ();
-          c.speed();
+
           System.out.println ("----------------------------");
           Car l=new Lexus ();
           l.start ();
           l.stop ();
-          l.speed();
+
           System.out.println ("----------------------------");
           Lexus lex= new Lexus ();
           lex.stop ();
@@ -23,34 +23,41 @@ public class InterfaceInheritance
           lex.speed();
     }
 }
-    interface Vehicle {
+    interface Vehicle
+    {
         void start();
     }
-    interface Car extender Vehicle {
-        void stop(){
-            System.out.println ("What is this method");
-        }
+    interface Car extends Vehicle
+    {
+        void stop();
     }
-  private class BMW implementer Car {
+   class BMW implements Car
+  {
         @Override
-        private void stop() {
+        public void stop()
+        {
             System.out.println (" BMW Car Stopped");
         }
         @Override
-        public void start() {
+        public void start()
+        {
             System.out.println (" BMW Car Started");
         }
     }
-   class Lexus implements  Car{
+   class Lexus implements  Car
+   {
        @Override
-       public void stop() {
+       public void stop()
+       {
            System.out.println (" Lexus Car Stopped");
        }
        @Override
-       public void start() {
-           System.out.println (" Lexus Car Stopped");
+       public void start()
+       {
+           System.out.println (" Lexus Car Started");
        }
-       public void speed(){
-         return  System.out.println (" Lexus Car Speed 250mph");
+       public void speed()
+       {
+           System.out.println (" Lexus Car Speed 250mph");
        }
 }

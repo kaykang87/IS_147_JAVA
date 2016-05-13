@@ -4,7 +4,10 @@
 
 package com.company;
 
-public class Main
+public class Main extends InterfaceInheritance
 {
-      n
+    Main()
+    {
+        super();
+    }
 }
