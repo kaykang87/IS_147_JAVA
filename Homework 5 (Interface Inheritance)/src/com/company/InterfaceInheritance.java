@@ -7,7 +7,7 @@ public class InterfaceInheritance
 {
       public static void main(String[] args)
       {
-          Car c= new BMW();
+          Car c= new BMW(); // Interface needs to be initiated after being implemented.
           c.start ();
           c.stop ();
 
